@@ -1,6 +1,6 @@
 project_name: "explore-assistant-cf-mis"
 
-application: explore_assistant_test_cf {
+application: explore_assistant_cf_mis {
   label: "Explore Assistant (CF - Make It Smarter Branch)"
   file: "bundle.js"
   entitlements: {
