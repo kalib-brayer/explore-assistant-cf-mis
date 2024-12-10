@@ -2,7 +2,7 @@ project_name: "explore-assistant-cf-mis"
 
 application: explore_assistant_cf_mis {
   label: "Explore Assistant (CF - Make It Smarter Branch)"
-  file: "bundle_context_df.js"
+  file: "bundle_retest.js"
   entitlements: {
     core_api_methods: ["lookml_model_explore","create_sql_query","run_sql_query","run_query","create_query"]
     navigation: yes
