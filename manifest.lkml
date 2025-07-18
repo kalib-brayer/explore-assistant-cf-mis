@@ -15,3 +15,28 @@ application: explore_assistant_cf_mis {
     oauth2_urls: ["https://accounts.google.com/o/oauth2/v2/auth"]
   }
 }
+
+
+application: dashboard_summarization_with_cf_be {
+  label: "Dashboard GenAI"
+  file: "dashboard_summarization.js"
+  # url: "https://localhost:8080/dashboard_summarization.js"
+  mount_points: {
+    dashboard_vis: no
+    dashboard_tile: yes
+    standalone: no
+  }
+  entitlements: {
+    local_storage: yes
+    navigation: no
+    new_window: no
+    new_window_external_urls: []
+    use_form_submit: yes
+    use_embeds: yes
+    use_iframes: yes
+    use_clipboard: no
+    core_api_methods: ["run_inline_query", "all_lookml_models", "dashboard", "dashboard_dashboard_elements","me","update_user_attribute","create_user_attribute","all_user_attributes","user_attribute_user_values","set_user_attribute_user_value"]
+    external_api_urls: ["https://looker-explore-assistant-mcp-dnhcuixsgq-uc.a.run.app"]
+    oauth2_urls: ["https://accounts.google.com/o/oauth2/v2/auth"]
+  }
+}
