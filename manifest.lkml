@@ -36,7 +36,7 @@ application: dashboard_summarization_with_cf_be {
     use_iframes: yes
     use_clipboard: no
     core_api_methods: ["run_inline_query", "all_lookml_models", "dashboard", "dashboard_dashboard_elements","me","update_user_attribute","create_user_attribute","all_user_attributes","user_attribute_user_values","set_user_attribute_user_value"]
-    external_api_urls: ["https://looker-explore-assistant-mcp-dnhcuixsgq-uc.a.run.app"]
+    external_api_urls: ["https://looker-explore-assistant-mcp-63299712962.us-central1.run.app/"]
     oauth2_urls: ["https://accounts.google.com/o/oauth2/v2/auth"]
   }
 }
