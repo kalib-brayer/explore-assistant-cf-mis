@@ -2,8 +2,8 @@ project_name: "explore-assistant-cf-mis"
 
 application: explore_assistant_cf_mis {
   label: "Explore Assistant (CF - Make It Smarter Branch)"
-  file: "explore_assistant.js"
-  # url: "https://localhost:8080/explore_assistant.js"
+  # file: "explore_assistant.js"
+  url: "https://localhost:8080/explore_assistant.js"
   entitlements: {
     core_api_methods: ["lookml_model_explore", "run_inline_query", "run_query", "create_query", "update_user_attribute", "create_user_attribute", "all_user_attributes", "me", "user_attribute_user_values", "search_roles", "login_user", "all_connections","test_connection","connections","connection","all_lookml_models","run_url_encoded_query"]
     navigation: yes
