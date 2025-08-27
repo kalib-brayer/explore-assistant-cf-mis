@@ -12,7 +12,7 @@ application: explore_assistant_cf_mis {
     new_window: yes
     new_window_external_urls: ["https://developers.generativeai.google/*","https://bytecodeef.looker.com/*"]
     local_storage: yes
-    external_api_urls: ["https://ea-demo-backend-63299712962.us-central1.run.app"]
+    external_api_urls: ["https://ea-demo-backend-63299712962.us-central1.run.app","https://ea-demo-backend-63299712962.us-central1.run.app"]
     oauth2_urls: ["https://accounts.google.com/o/oauth2/v2/auth"]
   }
 }
@@ -20,8 +20,8 @@ application: explore_assistant_cf_mis {
 
 application: dashboard_summarization_with_cf_be {
   label: "Dashboard GenAI"
-  file: "dashboard_summarization.js"
-  # url: "https://localhost:8080/dashboard_summarization.js"
+  # file: "dashboard_summarization.js"
+  url: "https://localhost:8080/dashboard_summarization.js"
   mount_points: {
     dashboard_vis: no
     dashboard_tile: yes
@@ -36,7 +36,7 @@ application: dashboard_summarization_with_cf_be {
     use_embeds: yes
     use_iframes: yes
     use_clipboard: no
-    core_api_methods: ["run_inline_query", "all_lookml_models", "dashboard", "dashboard_dashboard_elements","me","update_user_attribute","create_user_attribute","all_user_attributes","user_attribute_user_values","set_user_attribute_user_value"]
+    core_api_methods: ["run_inline_query", "all_lookml_models", "dashboard", "dashboard_dashboard_elements","me","update_user_attribute","create_user_attribute","all_user_attributes","user_attribute_user_values","set_user_attribute_user_value", "all_users"]
     external_api_urls: ["https://looker-explore-assistant-mcp-63299712962.us-central1.run.app/"]
     oauth2_urls: ["https://accounts.google.com/o/oauth2/v2/auth"]
   }
