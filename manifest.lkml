@@ -20,8 +20,8 @@ application: explore_assistant_cf_mis {
 
 application: dashboard_summarization_with_cf_be {
   label: "Dashboard GenAI"
-  # file: "dashboard_summarization.js"
-  url: "https://localhost:8080/dashboard_summarization.js"
+  file: "dashboard_summarization.js"
+  # url: "https://localhost:8080/dashboard_summarization.js"
   mount_points: {
     dashboard_vis: no
     dashboard_tile: yes
