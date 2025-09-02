@@ -1,5 +1,5 @@
 view: golden_queries {
-  sql_table_name: `explore-assistant-cf-mis.explore_assistant.golden_queries` ;;
+  sql_table_name: `explore-assistant-cf-mis.explore_assistant.olympic_queries` ;;
 
   dimension: input {
     type: string
@@ -16,6 +16,10 @@ view: golden_queries {
     type: string
     description: "Explore id of the explore to pull examples for in a format of lookml_model:lookml_explore"
     sql: ${TABLE}.explore_id ;;
+  }
+  dimension: rank {
+    type: string
+    sql: ${TABLE}.rank ;;
   }
   measure: count {
     type: count

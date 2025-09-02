@@ -4,6 +4,7 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 include: "/dashboards/*"
 
 explore: golden_queries {
+  sql_always_where: golden_queries.rank = 'gold' ;;
   join: explore_assistant_refinement_examples {
     type: left_outer
     relationship: one_to_one
